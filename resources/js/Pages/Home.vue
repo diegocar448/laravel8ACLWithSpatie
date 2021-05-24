@@ -1,12 +1,15 @@
 <template lang="pug">
-    <div>
-        Sou Sweet Home
-    </div>
-
+<div>
+  Olá {{user}} você esta na home.
+</div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    user: String,
+  },
+};
 </script>
 
 <style>

@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Inertia\Inertia;
+use Illuminate\Support\Facades\Schema;
+
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -24,7 +26,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $version = "1.0";
-        Inertia::version($version);
+        /* $version = "1.0";
+        Inertia::version($version); */
+        Schema::defaultstringLength(191);
     }
 }
