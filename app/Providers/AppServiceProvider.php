@@ -3,9 +3,14 @@
 namespace App\Providers;
 
 use Inertia\Inertia;
-use Illuminate\Support\Facades\Schema;
+use Illuminate\Pagination\Paginator;
 
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
+use NascentAfrica\Jetstrap\JetstrapFacade;
+
+
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -28,6 +33,10 @@ class AppServiceProvider extends ServiceProvider
     {
         /* $version = "1.0";
         Inertia::version($version); */
-        Schema::defaultstringLength(191);
+        //Schema::defaultstringLength(191);
+        //Paginator::useBootstrap();
+        JetstrapFacade::useCoreUi3();
+        //JetstrapFacade::useAdminLte3();
+
     }
 }

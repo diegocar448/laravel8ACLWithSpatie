@@ -1,6 +1,7 @@
+
 <template lang="pug">
 <div>
-  Olá {{user}} você esta na home.
+  Olá {{user.name}} você esta na home.
 </div>
 </template>
 
